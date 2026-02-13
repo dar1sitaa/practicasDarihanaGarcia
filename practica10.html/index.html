@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Viaje</title>
+</head>
+<body>
+    <h1>Formulario de Reserva de Viaje</h1>
+    <form>
+     
+        <fieldset>
+            <legend>Datos personales</legend>
+            
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="example@email.com" required><br><br>
+            
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+            
+            <label for="acompañantes">Número de acompañantes:</label><br>
+            <input type="number" id="acompanantes" name="acompanantes" min="1" max="5" step="1" required><br><br>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Datos del viaje</legend>
+            
+            <label for="origen">Lugar de origen:</label><br>
+            <input type="text" id="origen" name="origen" value="San Salvador" readonly><br><br>
+            
+            <label for="destino">Lugar de destino:</label><br>
+            <select id="destino" name="destino" required>
+                <option value="">Seleccione un destino</option>
+                <option value="Lauterbrunnen">Lauterbrunnen</option>
+                <option value="Florencia">Florencia</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Venecia">Venecia</option>
+            </select><br><br>
+            
+            <label for="salida">Fecha de salida:</label><br>
+            <input type="date" id="salida" name="salida" required><br><br>
+            
+            <label for="regreso">Fecha de regreso:</label><br>
+            <input type="date" id="regreso" name="regreso" required><br><br>
+        </fieldset>
+        
+        <button type="submit">Reservar</button>
+    </form>
+</body>
+</html>
